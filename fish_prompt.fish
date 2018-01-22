@@ -10,7 +10,7 @@ function fish_prompt
   set -g last_status $status                                         #exit status of last command
   #set -l count (_file_count)
   _icons_initialize
-  set -l p_path2 (_col brblue o u)(prompt_pwd2)(_col_res)            #path shortened to last two folders ($count)
+  set -l p_path2 (_col brblue o u)(prompt_pwd_full)(_col_res)            #path shortened to last two folders ($count)
   set -l symbols ''                                                  #add some pre-path symbols
   if [ $symbols_style = 'symbols' ]
     if [ ! -w . ];    set symbols $symbols(_col ff6600);           end
