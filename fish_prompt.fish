@@ -3,8 +3,8 @@
 # Global variables that affect how left and right prompts look like
 set -g symbols_style                   'symbols'
 set -g theme_display_git_ahead_verbose  yes
-set -g theme_hide_hostname              no
-set -g theme_display_user               no
+set -g theme_hide_hostname              yes
+set -g theme_display_user               yes
 
 function fish_prompt
   set -g last_status $status                                         #exit status of last command
